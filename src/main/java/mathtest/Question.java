@@ -13,7 +13,8 @@ public class Question {
         return id;
     }
 
-    private String content, answer;
+    private String content;
+    private String answer;
     public Question() {
         int a = ThreadLocalRandom.current().nextInt(1, 9 + 1);
         int b = ThreadLocalRandom.current().nextInt(1, 9 + 1);
@@ -63,8 +64,4 @@ public class Question {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
-
-	/*private void generateQuestion() {
-
-	}*/
 }

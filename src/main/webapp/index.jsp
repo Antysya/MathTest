@@ -8,6 +8,8 @@
 <body>
 <%
     Question q = new Question();
+    StoreData store = new StoreData();
+    store.saveQuestion(q);
 %>
 
 <form action='Check' method='post'>

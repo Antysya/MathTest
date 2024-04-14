@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ac6928-aade-404c-8243-f3ae8b70b50a" name="Changes" comment="" />
+    <list default="true" id="13ac6928-aade-404c-8243-f3ae8b70b50a" name="Changes" comment="MathTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mathtest/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mathtest/MyApplicationContextConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/MathResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/MathResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/StoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/StoreData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +31,15 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -32,6 +56,7 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2emDMorXt4JcCSgC5vWqKswNtKm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,14 +76,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Smart Tomcat.Server.executor": "Run",
+    "Smart Tomcat.Tomcat: mathtest.executor": "Run",
     "Smart Tomcat.Unnamed.executor": "Run",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "22",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Top/Top/Java/ДЗ/ДЗ15/mathtest/src/main",
-    "project.structure.last.edited": "Global Libraries",
+    "last_opened_file_path": "D:/Top/Top/Java/ДЗ/ДЗ15/mathtest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.31474105",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="QodanaHighlightedReportService">
@@ -84,8 +122,12 @@
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\resources" />
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\java" />
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\java\mathtest" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -124,7 +166,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -136,7 +179,63 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712500820318</updated>
+      <workItem from="1713094305647" duration="2905000" />
+      <workItem from="1713097308994" duration="7054000" />
     </task>
+    <task id="LOCAL-00001" summary="MathTest">
+      <option name="closed" value="true" />
+      <created>1712647084999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712647084999</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MathTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="MathTest" />
   </component>
 </project>

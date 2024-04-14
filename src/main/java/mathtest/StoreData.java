@@ -9,35 +9,59 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 
-public class StoreData implements AutoCloseable {
-    private final StandardServiceRegistry REGISTRY = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-    private final Metadata METADATA = new MetadataSources(REGISTRY).getMetadataBuilder().build();
-    private final SessionFactory SESSION_FACTORY = METADATA.getSessionFactoryBuilder().build();
-    private final Session SESSION = SESSION_FACTORY.openSession();
-    private final Transaction TRANSACTION = SESSION.beginTransaction();
+public class StoreData {
+    private static final StandardServiceRegistry REGISTRY;
+    private static final Metadata METADATA;
+    private static final SessionFactory FACTORY;
+
+    static {
+        REGISTRY = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+        METADATA = new MetadataSources(REGISTRY).getMetadataBuilder().build();
+        FACTORY = METADATA.getSessionFactoryBuilder().build();
+    }
 
     public void saveQuestion(Question q) {
         save(q);
     }
 
     public void saveResult(Question q, String answer) {
-        MathResult res = new MathResult (q, answer);
+        MathResult res = new MathResult(q, answer);
         save(res);
     }
 
     public Question getQuestion(int id) {
-        return (Question)SESSION.get(Question.class, id);
+        return (Question) findIt(Question.class, id);
+    }
+
+    public Object findIt(Class cls, int id) {
+        Session session = FACTORY.openSession();
+        Transaction t = null;
+        Object result = null;
+        try {
+            t = session.beginTransaction();
+            result = session.get(cls, id);
+            t.commit();
+        } catch (Exception e) {
+            if (t != null) t.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
+        return result;
     }
 
     public void save(Object o) {
-        SESSION.persist(o);
-        TRANSACTION.commit();
-    }
-
-    @Override
-    public void close() throws Exception {
-        // TODO Auto-generated method stub
-        SESSION_FACTORY.close();
-        SESSION.close();
+        Session session = FACTORY.openSession();
+        Transaction t = null;
+        try {
+            t = session.beginTransaction();
+            session.persist(o);
+            t.commit();
+        } catch (Exception e) {
+            if (t != null) t.rollback();
+            e.printStackTrace();
+        } finally {
+            session.close();
+        }
     }
 }

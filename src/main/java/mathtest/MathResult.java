@@ -8,15 +8,13 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class MathResult {
-
-    public MathResult(Question q, String answer) {
-        question = q;
-        response = answer;
-    }
-
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE)
     private int id;
+
+    public MathResult() {
+
+    }
 
     //private int questionsCount, rightCount;
     public int getId() {
@@ -26,9 +24,9 @@ public class MathResult {
         this.id = id;
     }
 
-	/* @ManyToOne
+	@ManyToOne
     @JoinColumn(name = "user_id")
-    private User user; */
+    private Users user;
 
     @ManyToOne
     @JoinColumn(name = "question_id")
@@ -40,5 +38,10 @@ public class MathResult {
     }
     public void setResponse(String response) {
         this.response = response;
+    }
+
+    public MathResult(Question q, String answer) {
+        question = q;
+        response = answer;
     }
 }
