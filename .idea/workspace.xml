@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ac6928-aade-404c-8243-f3ae8b70b50a" name="Changes" comment="MathTest">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mathtest/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mathtest/MyApplicationContextConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="13ac6928-aade-404c-8243-f3ae8b70b50a" name="Changes" comment="1. Пароль вынесен из конфигурации hibernate&#10;2. Решена проблема с подключением к БД (добавила Логирование hibernate в консоль)">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Check.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/MathResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/MathResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/StoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/StoreData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +31,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Antysya&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Antysya/MathTest.git&quot;,
+    &quot;accountId&quot;: &quot;dfe77637-8249-4696-ba6d-3ad2b0c73b27&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -61,44 +63,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.mathtest [clean].executor": "Run",
-    "Maven.mathtest [compile].executor": "Run",
-    "Maven.mathtest [deploy].executor": "Run",
-    "Maven.mathtest [package].executor": "Run",
-    "Maven.mathtest [validate].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Smart Tomcat.Server.executor": "Run",
-    "Smart Tomcat.Tomcat: mathtest.executor": "Run",
-    "Smart Tomcat.Unnamed.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Top/Top/Java/ДЗ/ДЗ15/mathtest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31474105",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mathtest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mathtest [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mathtest [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mathtest [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mathtest [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Server.executor&quot;: &quot;Run&quot;,
+    &quot;Smart Tomcat.Tomcat: mathtest.executor&quot;: &quot;Run&quot;,
+    &quot;Smart Tomcat.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Top/Top/Java/ДЗ/ДЗ15/mathtest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31474105&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="QodanaHighlightedReportService">
     <option name="localReportPersistedInfo">
       <LocalReportPersistedInfo>
@@ -162,6 +164,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/10.1.19" />
+          <option name="path" value="C:/Program Files/Apache Software Foundation/Tomcat_10.1" />
+          <option name="version" value="10.1.19.0" />
+        </TomcatInfo>
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -180,7 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712500820318</updated>
       <workItem from="1713094305647" duration="2905000" />
-      <workItem from="1713097308994" duration="7054000" />
+      <workItem from="1713097308994" duration="10427000" />
     </task>
     <task id="LOCAL-00001" summary="MathTest">
       <option name="closed" value="true" />
@@ -190,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712647084999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Пароль вынесен из конфигурации hibernate&#10;2. Решена проблема с подключением к БД (добавила Логирование hibernate в консоль)">
+      <option name="closed" value="true" />
+      <created>1713104803082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713104803082</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,19 +243,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -236,6 +251,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MathTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="MathTest" />
+    <MESSAGE value="1. Пароль вынесен из конфигурации hibernate&#10;2. Решена проблема с подключением к БД (добавила Логирование hibernate в консоль)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Пароль вынесен из конфигурации hibernate&#10;2. Решена проблема с подключением к БД (добавила Логирование hibernate в консоль)" />
   </component>
 </project>
