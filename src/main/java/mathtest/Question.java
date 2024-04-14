@@ -37,11 +37,13 @@ public class Question {
                 result = a * b;
                 break;
             case 4:
-                operation = "/";
-                if (b == 0) {
-                    b = 1;
+                operation = "*";
+                result = a * b;
+                if (result != 0) {
+                    operation = "/";
+                    b = result;
+                    result = a / b;
                 }
-                result = a / b;
                 break;
             default:
                 operation = "+";
