@@ -12,6 +12,18 @@ public class Users {
     private int id;
     private String firstName;
     private String lastName;
+    private String hashPassword;
+
+    public Users() {
+    }
+
+    public Users(String firstName, String lastName, String hashPassword) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.hashPassword = hashPassword;
+    }
+
+    public int getId() {return id;}
 
     public String getFirstName() {
         return firstName;
@@ -26,4 +38,7 @@ public class Users {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getHashPassword() {return hashPassword;}
+    public void setHashPassword(String hashPassword) {this.hashPassword = hashPassword;}
 }

@@ -13,11 +13,12 @@
     StoreData store = new StoreData();
     store.saveQuestion(q);
 %>
-
+<h2>Решите пример:</h2>
 <form action='Check' method='post'>
 <input type='hidden' name='questionId' value='<%=q.getId()%>'>
-How many is <%=q.getContent()%> ? <input type='number' name='answer'>?
-<input type='submit' value='Ответить'>
+    <label for="answer"> <%=q.getContent()%> ? </label>
+    <input type="number" name="answer" id="answer"><br><br>
+    <input type='submit' value='Ответить'>
 </form>
 </body>
 </html>

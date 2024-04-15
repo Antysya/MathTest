@@ -41,9 +41,11 @@ public class Question {
                 result = a * b;
                 if (result != 0) {
                     operation = "/";
-                    b = result;
+                    a = result;
                     result = a / b;
                 }
+                else
+                    result = a / 1;
                 break;
             default:
                 operation = "+";
