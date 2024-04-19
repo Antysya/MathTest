@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.concurrent.ThreadLocalRandom" %>
 <%@ page import="mathtest.Question" %>
-<%@ page import="mathtest.StoreData" %>
+<%@ page import="mathtest.DatabaseConnection" %>
 
 <html>
 <title>Тестирование по математике</title>
@@ -10,15 +10,15 @@
 <body>
 <%
     Question q = new Question();
-    StoreData store = new StoreData();
-    store.saveQuestion(q);
+    DatabaseConnection store = new DatabaseConnection();
+    store.save(q);
 %>
 <h2>Решите пример:</h2>
 <form action='Check' method='post'>
 <input type='hidden' name='questionId' value='<%=q.getId()%>'>
     <label for="answer"> <%=q.getContent()%> ? </label>
     <input type="number" name="answer" id="answer"><br><br>
-    <input type='submit' value='Ответить'>
+    <input type='submit' value='check'>
 </form>
 </body>
 </html>

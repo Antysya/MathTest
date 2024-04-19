@@ -9,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 
-public class StoreData {
+/*public class StoreData {
     private static final StandardServiceRegistry REGISTRY;
     private static final Metadata METADATA;
     private static final SessionFactory FACTORY;
@@ -30,6 +30,7 @@ public class StoreData {
     }
 
     public Question getQuestion(int id) {
+
         return (Question) findIt(Question.class, id);
     }
 
@@ -64,4 +65,4 @@ public class StoreData {
             session.close();
         }
     }
-}
+}*/

@@ -8,8 +8,13 @@ import org.springframework.context.annotation.Scope;
 public class MyApplicationContextConfiguration {
     @Bean
     @Scope("singleton")
-    public StoreData dataSource() {
-        StoreData dataSource = new StoreData();
+    public DatabaseConnection dataSource() {
+        DatabaseConnection dataSource = new DatabaseConnection();
         return dataSource;
     }
+
+    //public StoreData dataSource() {
+    //    StoreData dataSource = new StoreData();
+    //    return dataSource;
+    //}
 }
