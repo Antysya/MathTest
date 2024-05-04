@@ -77,6 +77,11 @@ public class DatabaseConnection {
         save(res);
     }
 
+    public boolean saveUser(String fn, String ln, String p) {
+        Users res = new Users(fn, ln, p);
+        return save(res);
+    }
+
     public Question getQuestion(int id) {
         return (Question) findIt(Question.class, id);
     }
@@ -89,7 +94,24 @@ public class DatabaseConnection {
         return result;
     }
 
-    public void save(Object o) {
+    public boolean save(Object o) {
+        try (Session session = factory.openSession()) {
+            try {
+                Transaction t = session.beginTransaction();
+                session.persist(o);
+                t.commit();
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /*public void save(Object o) {
         Session session = factory.openSession();
         Transaction t = session.beginTransaction();
         session.persist(o);
@@ -97,7 +119,7 @@ public class DatabaseConnection {
         session.close();
         //factory.close();
 
-    }
+    }*/
 
    // public Users getUser(String cookies) {
    //     int id = 1;  // get from cookies

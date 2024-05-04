@@ -13,18 +13,19 @@
 
 </head>
 <body>
-<h2>Форма регистации</h2>
-<form action="register" method="post">
+<h2>Форма регистрации</h2>
+<form action="Registration" method="post">
     <label for="firstName">Фамилия:</label>
-    <input type="text" id="firstName" name="firstName"><br><br>
+    <input type="text" id="firstName" name="firstName" placeholder="Введите фамилию"><br><br>
 
     <label for="lastName">Имя:</label>
-    <input type="text" id="lastName" name="lastName"><br><br>
+    <input type="text" id="lastName" name="lastName" placeholder="Введите имя"><br><br>
 
     <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password"><br><br>
+    <input type="password" id="password" name="password" placeholder="Введите пароль"><br><br>
 
-    <input type="submit" value="Register">
+    <input type="submit" id="register" name="register"
+           value="Зарегистрироваться">
 </form>
 </body>
 </html>

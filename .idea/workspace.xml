@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ac6928-aade-404c-8243-f3ae8b70b50a" name="Changes" comment="Добавила форму регистрации&#10;Исправила ошибку в формировании примеров с делением">
-      <change afterPath="$PROJECT_DIR$/dtd/hibernate-configuration-3.0.dtd" afterDir="false" />
+    <list default="true" id="13ac6928-aade-404c-8243-f3ae8b70b50a" name="Changes" comment="DatabaseConnection.java&#10;MyApplicationContextConfiguration.java&#10;dtd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mathtest/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/Check.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/MyApplicationContextConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/MyApplicationContextConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mathtest/StoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mathtest/StoreData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,12 +126,16 @@
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\webapp" />
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\resources" />
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\java" />
       <recent name="D:\Top\Top\Java\ДЗ\ДЗ15\mathtest\src\main\java\mathtest" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mathtest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -155,9 +156,6 @@
       <option name="catalinaBase" value="C:\Users\Пользователь\.SmartTomcat\mathtest\mathtest" />
       <option name="contextPath" value="/mathtest" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -193,7 +191,9 @@
       <workItem from="1713097308994" duration="10910000" />
       <workItem from="1713197538883" duration="8785000" />
       <workItem from="1713370502374" duration="12968000" />
-      <workItem from="1713545517803" duration="6312000" />
+      <workItem from="1713545517803" duration="7926000" />
+      <workItem from="1714468293973" duration="8977000" />
+      <workItem from="1714757518983" duration="4809000" />
     </task>
     <task id="LOCAL-00001" summary="MathTest">
       <option name="closed" value="true" />
@@ -235,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713206722839</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DatabaseConnection.java&#10;MyApplicationContextConfiguration.java&#10;dtd">
+      <option name="closed" value="true" />
+      <created>1713552047824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713552047824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="1. Пароль вынесен из конфигурации hibernate&#10;2. Решена проблема с подключением к БД (добавила Логирование hibernate в консоль)" />
     <MESSAGE value="Добавила стили" />
     <MESSAGE value="Добавила форму регистрации&#10;Исправила ошибку в формировании примеров с делением" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила форму регистрации&#10;Исправила ошибку в формировании примеров с делением" />
+    <MESSAGE value="DatabaseConnection.java&#10;MyApplicationContextConfiguration.java&#10;dtd" />
+    <option name="LAST_COMMIT_MESSAGE" value="DatabaseConnection.java&#10;MyApplicationContextConfiguration.java&#10;dtd" />
   </component>
 </project>

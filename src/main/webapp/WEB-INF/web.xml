@@ -10,6 +10,17 @@
     <servlet-name>Check</servlet-name>
     <url-pattern>/Check</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Registration</display-name>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>mathtest.Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+
   <display-name>MathTest</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

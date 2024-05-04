@@ -4,6 +4,12 @@
 <%@ page import="mathtest.Question" %>
 <%@ page import="mathtest.DatabaseConnection" %>
 
+<%
+    if(session.getAttribute("name")==null){
+        response.sendRedirect("login.jsp");
+    }
+
+%>
 <html>
 <title>Тестирование по математике</title>
 <style><%@include file="/WEB-INF/css/style.css"%></style>
